@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pure Help Chat</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    @font-face {
+      font-family: 'National2';
+      src: url('National2-Regular.ttf') format('truetype');
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: 'National2';
+      src: url('National2-Bold.ttf') format('truetype');
+      font-weight: 700;
+    }
+    body {
+      background: #f7f4ef;
+      font-family: 'National2', sans-serif;
+      padding: 24px;
+    }
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #1E1E1E;
+      margin-bottom: 8px;
+    }
+    p {
+      font-size: 0.95rem;
+      color: #544946;
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+    h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #1E1E1E;
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Ask Pure AI!</h2>
+  <p>Have questions about Pure? Our AI bot searches the Pure Help Center to find personalized answers and links directly to the source. It can also respond in the language you ask your question in.</p>
+
+  <h3>Helpful tips:</h3>
+  <p>For best results, specify the specific module or area of Pure you're asking about and your user role. The bot searches across all modules and help articles.</p>
+
+  <p>Click the widget in the bottom right corner to ask your question.</p>
+
+  <script>
+    helpjuice_account_url = 'https://helpcenter.pure.elsevier.com';
+    helpjuice_contact_us_url = 'https://helpcenter.pure.elsevier.com/contact-us';
+    helpjuiceSwiftyConfig = {
+      subdomain: 'pure',
+      widgetPosition: '',
+      themeColor: '#2354FF',
+      linksColor: '#FF551D',
+      chatHeader: 'Pure Help Center AI Bot',
+      chatWelcomeHeader: 'Ask Pure AI',
+      chatWelcomeMessage: 'Let us help you find the answer. Be as specific as possible about the feature or issue you need help with for the best results. AI responses may occasionally be inaccurate, so please verify important information.',
+      chatInputPlaceholder: 'Ask, write, or search for anything...',
+      chatIconUrl: '',
+      chatNoResultsMessage: 'Sorry, we couldn\'t find any results. Please contact our support team for further assistance: https://helpcenter.pure.elsevier.com/en_US/support'
+    };
+  </script>
+  <script src='https://helpcenter.pure.elsevier.com/swifty_chat.js'></script>
+
+</body>
+</html>
